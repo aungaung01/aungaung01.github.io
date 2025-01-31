@@ -123,22 +123,27 @@
     <br>
     <hr>
     <h1 align="center" id="comment">Leave a comment</h1>
-    <div align="center">
-       <form action="">
-        <label for="name">Name</label>
-        <input type="text" name="user_name" id="name" required placeholder="Aung Aung">
-        <br><br>
-
-        <label for="email">Email</label>
-        <input type="email" name="user_email" id="email" required placeholder="aungaung@gmail.com">
-        <br><br>
-
-        <label for="comment">Comment</label>
-        <textarea name="user_comment" id="comment" required></textarea>
-        <br><br>
-        <button input="submit">Send</button>
-       </form>
-    </div>
+    <form action="">
+        <table align="center">
+            <tr>
+                <td> <label for="name">Name</label></td>
+                <td><input type="text" name="user_name" id="name" required placeholder="Aung Aung"></td>
+            </tr>
+            <tr>
+                <td><label for="email">Email</label></td>
+                <td><input type="email" name="user_email" id="email" required placeholder="aungaung@gmail.com"></td>
+            </tr>
+            <tr>
+                <td><label for="comment">Comment</label></td>
+                <td> <textarea name="user_comment" id="comment" required></textarea></td>
+            </tr>
+        </table>
+    </form>
+        <br>
+        <div align="center">
+            <button input="submit">Send</button>
+        </div>
+    
     <br>
     <hr>
     <footer>
