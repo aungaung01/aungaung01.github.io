@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <h1>Looping</h1>
+    <script>
+        
+        for (let h = 0; h < 5; h++) {
+            for (let m = h; m < 5; m++) {
+                document.write("*") ; 
+            }
+                document.write("<br>");
+        }
+
+        let number1 = Number(prompt("Enter a number"));
+        let number2 = 1
+        while (number2 <= 12) {
+            document.write(`${number1} x ${number2} = ${number1*number2} <br>`);
+            number2++;
+        }
+    </script>
+</body>
+</html>
