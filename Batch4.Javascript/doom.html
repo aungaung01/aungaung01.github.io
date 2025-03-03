@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 id="myId">Dom <i>Selector</i></h1>
+    <button oneclick="showData">Click Me</button>
+    <P class="myClass">Class selector 1</P>
+    <P class="myClass">Class selector 1</P>
+    <P class="myClass">Class selector 1</P>
+    <P class="myClass">Class selector 1</P>
+    <P class="myClass">Class selector 1</P>
+    <P class="myClass">Class selector 1</P>
+    <div id="myId">Class selector 2</div>
+
+    <script>
+        function showData() {
+
+            // idselector
+            let myId = document.getElementById('myid');
+            console.log(myId);
+            console.log(myId.innerText);
+            console.log(myId.innerHTML);
+
+            myId.innerText = `Javascript is <i>so funny</i>`;
+
+            // class selector
+            let  myClass = document.getElementsByClassName('myClass');
+            console.log(myClass);
+            console.log(myClass[1]);
+            console.log(myClass[1]).innerText;
+            
+            
+        }
+    </script>
+</body>
+</html>
